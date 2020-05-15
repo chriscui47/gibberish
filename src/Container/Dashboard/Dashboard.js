@@ -82,8 +82,6 @@ export default function Dashboard() {
     const [word, changeWord] = React.useState(allChats.servers[activeServer].word);
     var host = false; 
     
-const isLargeNumber = (element) => !(element.name).localeCompare(user);
-const userIndex= allChats.servers[activeServer].scores.findIndex(isLargeNumber);
   //handle send chat message using enter key
     const onKeyPress = (e) => {
       if(e.which === 13) {
@@ -167,6 +165,8 @@ React.useEffect(()=>{
 
 
 
+const isLargeNumber = (element) => !(element.name).localeCompare(user);
+const userIndex= allChats.servers[activeServer].scores.findIndex(isLargeNumber);
 //check if the user is the host
 if(userIndex ===0){  
   host=true;
@@ -208,6 +208,7 @@ React.useEffect(()=>{
   }  
 
 },[allChats.servers[activeServer].roundEnd]);
+
   return (
       
     <div>
