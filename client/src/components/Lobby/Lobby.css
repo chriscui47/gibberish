@@ -1,0 +1,31 @@
+
+.joinOuterContainer1 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200vh;
+    height: 100vh;
+    background-color: #F4F4F4;
+  }
+  
+  .joinInnerContainer1 {
+    width: 30%;  
+    height: 100%;  
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1%;
+    
+
+  }
+  .flexitem{
+    
+    align-self: center !important;
+    margin-top: 15vh;
+    width: 100%;
+  }
+  .items{
+align-self: auto;
+  }
